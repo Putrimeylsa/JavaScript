@@ -1,0 +1,54 @@
+<script>
+    let pegawai = "Putri Meylisa";
+    let jabatan = "Manager";
+    let status = "Belum Menikah";
+
+    let gaji = 0;
+    switch(jabatan){
+        case 'Manager' : gaji = 10000000; break;
+        case 'Asisten Manager' : gaji = 8000000; break;
+        case 'Staff' : gaji = 5000000; break;
+        default: gaji = 0;
+    }
+
+    let tunjangan = 0;
+    switch(jabatan) {
+        case 'Manager' : tunjangan = 0.1 * gaji; break;
+        case 'Asisten Manager' : tunjangan = 0.1 * gaji; break;
+        case 'Staff' : tunjangan = 0.1 * gaji; break;
+        default: tunjangan = 0;
+    }
+
+    let bpjs = 0;
+    switch(jabatan){
+        case 'Manager' : bpjs = 0.1 * gaji; break;
+        case 'Asisten Manager' : bpjs = 0.1 * gaji; break;
+        case 'Staff' : bpjs = 0.1 * gaji; break;
+        default: bpjs = 0;
+    
+    }
+
+    let tunjanganKeluarga = 0;
+    if (status == 'Menikah') {
+        if(jabatan == 'Manager') {
+            tunjanganKeluarga = 0.1 * gaji;
+        }
+        if(jabatan == 'Asisten Manager') {
+            tunjanganKeluarga = 0.1 * gaji;
+        }
+        if(jabatan == 'Staff') {
+            tunjanganKeluarga = 0.1 * gaji;
+        }
+    }
+    else if (status == 'Belum Menikah') tunjanganKeluarga = 0;
+
+    let totalGaji = gaji + tunjangan + bpjs + tunjanganKeluarga;
+        
+    
+    document.write("Data Pegawai"+
+        "<br/> Nama Pegawai :" + pegawai +
+        "<br/> Jabatan :" + jabatan +
+        "<br/> Status :" + status +
+        "<br/> Total Gaji :" + totalGaji
+        )
+        </script>

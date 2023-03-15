@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1 align="center">Kalkulator Sederhana</h1>
+    <h1 align="center"></h1>
+    <form id="formKalkulator" align="center">
+        <table align="center" cellpadding="10">
+            <tr>
+                <th colspan="4" bgcolor="Pink">Masukkan Angka</th>
+            </tr>
+            <tr>
+                <td><label for="">Angka Pertama</label></td>
+                <td colspan="3"><input type="text" name="angka1" placeholder="masukkan angka pertama" ></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="">Angka Kedua</label></td>
+                <td colspan="3"><input type="text" name="angka2" placeholder="masukkan angaka kedua"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="">Hasil</label></td>
+                <td colspan="3" ><input type="text" name="hasil" disabled></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <!-- button -->
+                <td colspan="4" bgcolor="grey">
+                    <input type="button" name="btn_tambah" value="+" onclick="tambah()" >
+                    <input type="button" name="btn_kurang" value="-" onclick="kurang()">
+                    <input type="button" name="btn_bagi" value="x" onclick="kali()">
+                    <input type="button" name="btn_kali" value="/" onclick="bagi()">
+                    <input type="button" name="btn_pangkat" value="**" onclick="pangkat()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="tugas4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Kelima JQuery sederhana</title>
+    <script src="js/jquery.js"></script>
+    <style type="text/css">
+        .masjid{
+            position:relative;
+            width: 300px;
+        }
+
+        .artis{
+            position:relative;
+            width: 300px; 
+        }
+
+        .adik{
+            position:relative;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $("img").click(function() {
+                $("img").fadeTo('slow',0);
+                $("img").fadeIn('slow',0);
+            })
+        })
+    </script>
+    
+    <h3>Masjid Cheng Ho Palembang</h3>
+    <img src="img/masjid.jpg" class="masjid">
+
+    <h3>Ini adalah seorang artis</h3>
+    <img src="img/artis.jpeg" class="artis">
+
+    <h3>Adik ini sedang menangis</h3>
+    <img src="img/adik.jpeg" class="adik">
+</body>
+</html>
